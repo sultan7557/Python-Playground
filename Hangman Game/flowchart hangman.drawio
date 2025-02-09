@@ -1,0 +1,89 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36" version="26.0.9">
+  <diagram name="Página-1" id="7MhEIa1JwSZO3WzrlD1H">
+    <mxGraphModel dx="954" dy="605" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6Se2SI3lMvRioVWw0Jsv-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6Se2SI3lMvRioVWw0Jsv-1" target="6Se2SI3lMvRioVWw0Jsv-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6Se2SI3lMvRioVWw0Jsv-1" value="start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="90" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6Se2SI3lMvRioVWw0Jsv-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6Se2SI3lMvRioVWw0Jsv-2" target="6Se2SI3lMvRioVWw0Jsv-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6Se2SI3lMvRioVWw0Jsv-2" value="get a random word from the list of words" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6Se2SI3lMvRioVWw0Jsv-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6Se2SI3lMvRioVWw0Jsv-4" target="6Se2SI3lMvRioVWw0Jsv-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6Se2SI3lMvRioVWw0Jsv-4" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;get the length of the word and show the spaces for each alphabet&lt;/font&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6Se2SI3lMvRioVWw0Jsv-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6Se2SI3lMvRioVWw0Jsv-6" target="6Se2SI3lMvRioVWw0Jsv-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6Se2SI3lMvRioVWw0Jsv-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6Se2SI3lMvRioVWw0Jsv-6" target="6Se2SI3lMvRioVWw0Jsv-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6Se2SI3lMvRioVWw0Jsv-6" value="ask the user to guess a letter" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="540" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6Se2SI3lMvRioVWw0Jsv-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6Se2SI3lMvRioVWw0Jsv-8" target="6Se2SI3lMvRioVWw0Jsv-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="829" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="140" y="800" />
+              <mxPoint x="141" y="800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6Se2SI3lMvRioVWw0Jsv-8" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;add the alphabet in the required place&amp;nbsp;&amp;nbsp;&lt;/font&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="710" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6Se2SI3lMvRioVWw0Jsv-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6Se2SI3lMvRioVWw0Jsv-11" target="6Se2SI3lMvRioVWw0Jsv-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6Se2SI3lMvRioVWw0Jsv-11" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;subtract the numebr of lives, and put one part of the hangman&lt;/font&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="710" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6Se2SI3lMvRioVWw0Jsv-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6Se2SI3lMvRioVWw0Jsv-14" target="6Se2SI3lMvRioVWw0Jsv-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="140" y="1290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6Se2SI3lMvRioVWw0Jsv-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="6Se2SI3lMvRioVWw0Jsv-14" target="6Se2SI3lMvRioVWw0Jsv-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6Se2SI3lMvRioVWw0Jsv-14" value="check if letters are finished" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="850" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6Se2SI3lMvRioVWw0Jsv-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.375;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="6Se2SI3lMvRioVWw0Jsv-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="910" as="sourcePoint" />
+            <mxPoint x="510" y="1290" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="690" y="910" />
+              <mxPoint x="690" y="911" />
+              <mxPoint x="680" y="911" />
+              <mxPoint x="680" y="1290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6Se2SI3lMvRioVWw0Jsv-15" value="check if lives are lost fully" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="850" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6Se2SI3lMvRioVWw0Jsv-17" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="1260" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6Se2SI3lMvRioVWw0Jsv-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.675;entryY=1.017;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="6Se2SI3lMvRioVWw0Jsv-15" target="6Se2SI3lMvRioVWw0Jsv-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
