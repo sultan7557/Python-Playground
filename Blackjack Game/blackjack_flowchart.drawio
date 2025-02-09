@@ -1,0 +1,86 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36" version="26.0.10">
+  <diagram name="Página-1" id="r4rjKxbzCHNBJ85S6N3d">
+    <mxGraphModel dx="954" dy="605" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ULjo7TlIm-onCIEWubR0-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ULjo7TlIm-onCIEWubR0-1" target="ULjo7TlIm-onCIEWubR0-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ULjo7TlIm-onCIEWubR0-1" value="start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="110" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ULjo7TlIm-onCIEWubR0-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ULjo7TlIm-onCIEWubR0-2" target="ULjo7TlIm-onCIEWubR0-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ULjo7TlIm-onCIEWubR0-2" value="Take a random two pieces of cards and show to user alongwith the score" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ULjo7TlIm-onCIEWubR0-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ULjo7TlIm-onCIEWubR0-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="425" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULjo7TlIm-onCIEWubR0-4" value="take two random cards for computer but show only one to the user" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ULjo7TlIm-onCIEWubR0-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ULjo7TlIm-onCIEWubR0-8" target="ULjo7TlIm-onCIEWubR0-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ULjo7TlIm-onCIEWubR0-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ULjo7TlIm-onCIEWubR0-8" target="ULjo7TlIm-onCIEWubR0-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ULjo7TlIm-onCIEWubR0-8" value="ask if the user&amp;nbsp;&lt;div&gt;wants another card or&amp;nbsp;&lt;div&gt;will stand&lt;/div&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="355" y="560" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ULjo7TlIm-onCIEWubR0-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ULjo7TlIm-onCIEWubR0-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="490" y="1120" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="720" y="940" />
+              <mxPoint x="721" y="940" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULjo7TlIm-onCIEWubR0-9" value="compare users score against the computers score" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="840" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ULjo7TlIm-onCIEWubR0-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ULjo7TlIm-onCIEWubR0-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULjo7TlIm-onCIEWubR0-11" value="pick another random card and add it to the users score" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ULjo7TlIm-onCIEWubR0-13" value="Yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="270" y="568" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ULjo7TlIm-onCIEWubR0-14" value="Stand" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="605" y="568" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ULjo7TlIm-onCIEWubR0-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ULjo7TlIm-onCIEWubR0-17" target="ULjo7TlIm-onCIEWubR0-18">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="130" y="1120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULjo7TlIm-onCIEWubR0-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ULjo7TlIm-onCIEWubR0-17" target="ULjo7TlIm-onCIEWubR0-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-70" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ULjo7TlIm-onCIEWubR0-17" value="show the users score after drawing a card and then ask if they want another or no?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="840" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ULjo7TlIm-onCIEWubR0-18" value="If no, then continue to compare agianst the computer cards score and decide the winner" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="1090" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ULjo7TlIm-onCIEWubR0-22" value="yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="260" y="868" width="40" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
