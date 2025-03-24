@@ -16,6 +16,3 @@ A simple GUI application built with Python's Tkinter library that converts dista
 - Python 3.x
 - Tkinter (usually comes pre-installed with Python)
 
-## Installation
-
-1. Clone this repository or download the source code:
