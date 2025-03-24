@@ -2,7 +2,7 @@
 
 A simple GUI application built with Python's Tkinter library that converts distances from miles to kilometers.
 
-![Miles to Kilometers Converter Screenshot](screenshot.png)
+![Miles to Kilometers Converter Screenshot](miles_to_km.png)
 
 ## Features
 
