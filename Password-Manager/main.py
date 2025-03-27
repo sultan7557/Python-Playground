@@ -2,10 +2,27 @@ import tkinter as tk
 from tkinter import messagebox
 import random
 import pyperclip
+import json
 
 
 FONT_NAME = "poppins"
 
+# ---------------------------- SEARCH FUNCTION ------------------------------- #
+def search():
+    website_input_data = website_input.get()
+    try:
+        with open("data.json", "r") as file:
+            data = json.load(file)
+    except FileNotFoundError:
+        messagebox.showinfo(title = "Error", message = "No data file found")
+
+    else:
+        if website_input_data in data:
+            email = data[website_input_data]["email"]
+            password = data[website_input_data]["password"]
+            messagebox.showinfo(title = website_input_data, message = f"Email: {email}\nPasswork: {password}")
+        else:
+            messagebox.showinfo(title = "Error", message = f"No details for {website_input_data} exists")
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
 def generate_password():
     letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
@@ -31,16 +48,31 @@ def save_data():
     email_input_data = email_input.get()
     password_input_data = password_input.get()
 
+    new_data ={
+        website_input_data: {
+            "email": email_input_data, 
+            "password": password_input_data
+        }
+    }
+
     if len(website_input_data) == 0 or len(password_input_data) == 0 or len(email_input_data) == 0:
-        messagebox.showinfo(title="Oops", message="Please dont leave any fields empty")
+        messagebox.showinfo(title="Oops", message="Please don't leave any fields empty")
+        return
+    try:
+        with open("data.json", "r") as file:
+            data = json.load(file)
+    except FileNotFoundError:
+        with open("data.json", "w") as file:
+            json.dump(new_data, file, indent=4)
+            
     else:
-        is_ok = messagebox.askokcancel(title=website_input_data, message=f"These are the details entered: \nEmail: {email_input_data}\nPassword: {password_input_data}\nIs it okay to save?")
-        if is_ok:
-            with open("/Users/alisultan/Desktop/Python/Password-Manager/data.txt", "a") as file:
-                file.write(f"{website_input_data} | {email_input_data} | {password_input_data}\n")
-            website_input.delete(0, tk.END)
-            password_input.delete(0, tk.END)
-            website_input.focus()
+        data.update(new_data)
+        with open ("data.json", "w") as file:
+            json.dump(data, file, indent=4)
+    finally:
+        website_input.delete(0, tk.END)
+        password_input.delete(0, tk.END)
+
 
 
 #UI SETUP
@@ -50,7 +82,7 @@ window.config(padx=50, pady=50, bg="white")
 
 
 canvas = tk.Canvas(width=200, height=200,bg="white", highlightthickness=0)
-logo_image = tk.PhotoImage(file = "/Users/alisultan/Desktop/python/Password-Manager/logo.png")
+logo_image = tk.PhotoImage(file = "logo.png")
 canvas.create_image(100, 100, image = logo_image)
 canvas.grid(column=1, row=0, pady=20)
 
@@ -68,8 +100,8 @@ password_label.grid(column=0, row=3,sticky="w", pady=3, columnspan=1)
 
 #Input fields
 
-website_input = tk.Entry(width = 35, bg="white",fg="black", borderwidth=1, highlightbackground="gray", highlightcolor="blue", insertbackground="black", highlightthickness=1)
-website_input.grid(column = 1, row=1, columnspan=2, sticky="ew")
+website_input = tk.Entry(width = 21, bg="white",fg="black", borderwidth=1, highlightbackground="gray", highlightcolor="blue", insertbackground="black", highlightthickness=1)
+website_input.grid(column = 1, row=1, columnspan=1)
 website_input.focus()
 
 
@@ -92,6 +124,9 @@ generate_password_button.grid(column = 2, row = 3)
 
 add_button = tk.Button(text = "Add", width=36,  highlightthickness = 0, highlightbackground="white", command=save_data) 
 add_button.grid(column = 1, row=4, columnspan=2, pady=1)
+
+search_button = tk.Button(text = "Search", width = 13, highlightthickness = 0, background="blue", highlightbackground="white", command = search)
+search_button.grid(column = 2, row=1, columnspan=2,pady = 4, sticky="ew")
 
 
 window.mainloop()
