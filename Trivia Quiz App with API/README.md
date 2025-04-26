@@ -2,7 +2,7 @@
 
 A Python-based trivia quiz game that fetches questions from the Open Trivia Database API and presents them in a clean GUI built with Tkinter.
 
-![Quizzly Screenshot](quizzly_screenshot.png)
+![Quizzly Screenshot](quizzly-screenshot.png)
 
 ## Features
 
