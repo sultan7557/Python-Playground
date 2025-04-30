@@ -2,7 +2,7 @@
 
 A Python application that helps you track your daily reading habits using Pixela's visual tracking API. Monitor how many pages you read each day with beautiful graphs and visual progress tracking.
 
-![Pixela Graph Example]([https://pixe.la/static/img/sample-graph.png](https://pixe.la/v1/users/a-know/graphs/test-graph))
+![Pixela Graph Example](screenshot.png)
 
 ## Features
 
